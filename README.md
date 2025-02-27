@@ -1,18 +1,64 @@
-# personal-chatbot
-## Steps to set up a personal chatbot like chatGPT
+# Personal Chatbot
 
-1. Install python in your system.
-2. Clone this project.
-3. Install the dependencies
-    pip install -r ./requirements.txt
-4. Download and Install ollama in your system.
-5. Open a terminal and then run the following command
-    ollama run llama3.3
-    where llama3.3 is the name of the model, here you are free to choose any model from ollama.
-6. In the app.py file change the value of "MODEL" to the name of the model that you have just installed.
-7. Activate your virtual environment.
-8. Finally run the project
-    streamlit run app.py
-9. You can then visit http://localhost:8501, to interact with your model.
+A personal chatbot interface built with Streamlit, using Ollama models like `llama3.3`. This guide will help you set up and run your chatbot seamlessly.
 
+## Prerequisites
+
+- Install **Python** on your system.
+- Install **Ollama** for running AI models locally.
+- Ensure you have **pip** for package management.
+
+## Installation & Setup
+
+### 1. Clone the Repository
+```sh
+git clone https://github.com/your-repository/personal-chatbot.git
+cd personal-chatbot
+```
+
+### 2. Install Dependencies
+```sh
+pip install -r requirements.txt
+```
+
+### 3. Install & Run Ollama
+
+Download and install **Ollama** from [Ollama's official website](https://ollama.ai/).
+Once installed, run the following command to start your model:
+```sh
+ollama run llama3.3
+```
+*(You can replace `llama3.3` with any model available in Ollama.)*
+
+### 4. Configure the Model
+Edit the `app.py` file and update the `MODEL` variable with the name of the model you installed.
+
+### 5. Activate Virtual Environment (Optional but Recommended)
+If you're using a virtual environment, activate it:
+```sh
+source venv/bin/activate  # macOS/Linux
+```
+
+### 6. Run the Chatbot
+```sh
+streamlit run app.py
+```
+
+### 7. Access the Chatbot
+Once the server starts, open your browser and go to:
+```sh
+http://localhost:8501
+```
+
+## Usage
+
+- Type your queries in the chat interface.
+- The chatbot will respond based on the selected AI model.
+- Modify `app.py` to customize the chatbot behavior.
+
+## Contributing
+Feel free to contribute! Fork the repository, make changes, and submit a pull request.
+
+## License
+This project is licensed under the MIT License.
 
